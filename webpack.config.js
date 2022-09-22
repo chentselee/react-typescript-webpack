@@ -30,7 +30,6 @@ module.exports = {
         loader: "ts-loader",
         exclude: /node_modules/,
         options: {
-          transpileOnly: true,
           getCustomTransformers: () => ({
             before: [isDevelopment && ReactRefreshTypeScript()].filter(Boolean),
           }),
