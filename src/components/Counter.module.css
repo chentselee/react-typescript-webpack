@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 8px;
+  border: 1px solid grey;
+  padding: 16px;
+  margin-block-start: 8px;
+}
+
+.count {
+  grid-row: 1;
+  grid-column: 2/ 3;
+  justify-self: center;
+}
+
+.buttons {
+  grid-row: 2;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-around;
+}

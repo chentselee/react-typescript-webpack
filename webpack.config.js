@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const ReactFastRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const ReactRefreshTypeScript = require("react-refresh-typescript");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
@@ -25,6 +26,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
       {
         test: /\.(ts|js)x?$/,
         loader: "ts-loader",
@@ -56,6 +61,7 @@ module.exports = {
       template: "index.html",
     }),
     new ForkTsCheckerWebpackPlugin(),
+    new MiniCssExtractPlugin(),
     isDevelopment && new ReactFastRefreshWebpackPlugin(),
   ].filter(Boolean),
 };

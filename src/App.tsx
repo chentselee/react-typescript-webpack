@@ -1,11 +1,16 @@
-import Counter from "./components/Counter";
+import { lazy, Suspense } from "react";
+import "./App.css";
+
+const Counter = lazy(() => import("./components/Counter"));
 
 const App = () => {
   return (
-    <>
-      <div>it works</div>
-      <Counter />
-    </>
+    <Suspense>
+      <div className="container">
+        <div>it works</div>
+        <Counter />
+      </div>
+    </Suspense>
   );
 };
 
