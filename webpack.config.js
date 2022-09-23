@@ -4,6 +4,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const ReactFastRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const ReactRefreshTypeScript = require("react-refresh-typescript");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
@@ -53,6 +54,7 @@ module.exports = {
           },
         },
       },
+      minimizer: ["...", new CssMinimizerWebpackPlugin()],
     }),
   },
   plugins: [
