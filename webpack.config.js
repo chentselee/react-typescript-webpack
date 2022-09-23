@@ -4,7 +4,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const ReactFastRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const ReactRefreshTypeScript = require("react-refresh-typescript");
 
-const isDevelopment = process.env.NODE_ENV === "developemnt";
+const isDevelopment = process.env.NODE_ENV === "development";
 
 module.exports = {
   mode: process.env.NODE_ENV,
