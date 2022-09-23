@@ -61,7 +61,9 @@ module.exports = {
       template: "index.html",
     }),
     new ForkTsCheckerWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+    }),
     isDevelopment && new ReactFastRefreshWebpackPlugin(),
   ].filter(Boolean),
 };
