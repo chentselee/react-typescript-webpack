@@ -26,5 +26,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "packageManager": "pnpm@6.32.19",
+  "engines": {
+    "node": "16.14.0",
+    "pnpm": "6.32.19"
   }
 }
