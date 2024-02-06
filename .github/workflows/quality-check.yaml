@@ -1,6 +1,7 @@
 name: Quality check
 on:
   push:
+  workflow_dispatch:
 jobs:
   lint:
     runs-on: ubuntu-20.04
