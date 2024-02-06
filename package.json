@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "NODE_ENV=development webpack serve",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "lint": "tsc --noEmit"
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
