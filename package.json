@@ -8,8 +8,8 @@
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.1.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
@@ -25,12 +25,12 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0"
   },
-  "packageManager": "pnpm@8.15.1",
+  "packageManager": "pnpm@10.23.0",
   "engines": {
     "node": "20.11.0",
-    "pnpm": "8.15.1"
+    "pnpm": "10.23.0"
   }
 }
