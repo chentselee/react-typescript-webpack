@@ -1,5 +1,5 @@
 import { useState } from "react";
-import classes from "./Counter.module.css";
+import * as classes from "./Counter.module.css";
 
 const Counter = () => {
   const [count, setCount] = useState(() => 0);

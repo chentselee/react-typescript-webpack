@@ -7,22 +7,22 @@
     "lint": "tsc --noEmit"
   },
   "devDependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.2",
     "@types/react": "~19.2.7",
     "@types/react-dom": "~19.2.3",
-    "css-loader": "^6.7.1",
-    "css-minimizer-webpack-plugin": "^4.1.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "fork-ts-checker-webpack-plugin": "~9.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
+    "html-webpack-plugin": "^5.6.5",
+    "mini-css-extract-plugin": "^2.9.4",
     "react-refresh": "^0.14.0",
-    "react-refresh-typescript": "^2.0.7",
+    "react-refresh-typescript": "^2.0.11",
     "ts-loader": "~9.5.4",
     "typescript": "5.9.3",
     "typescript-plugin-css-modules": "~5.2.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
     "react": "~19.2.0",
