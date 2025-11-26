@@ -19,10 +19,10 @@ importers:
         specifier: ^0.5.7
         version: 0.5.17(react-refresh@0.14.2)(webpack-dev-server@4.15.2)(webpack@5.103.0)
       '@types/react':
-        specifier: ^19.2.7
+        specifier: ~19.2.7
         version: 19.2.7
       '@types/react-dom':
-        specifier: ^19.2.3
+        specifier: ~19.2.3
         version: 19.2.3(@types/react@19.2.7)
       css-loader:
         specifier: ^6.7.1
