@@ -1,14 +1,15 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
-const ReactFastRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
-const ReactRefreshTypeScript = require("react-refresh-typescript");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
+import path from "path";
+import { type Configuration } from 'webpack'
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import ReactFastRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
+import ReactRefreshTypeScript from "react-refresh-typescript";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import CssMinimizerWebpackPlugin from "css-minimizer-webpack-plugin";
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
-module.exports = {
+export default {
   mode: process.env.NODE_ENV,
   entry: { main: "./src/main.tsx" },
   output: {
@@ -68,4 +69,4 @@ module.exports = {
     }),
     isDevelopment && new ReactFastRefreshWebpackPlugin(),
   ].filter(Boolean),
-};
+} as Configuration;
